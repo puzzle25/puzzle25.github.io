@@ -1,7 +1,31 @@
 <html>
-    <form>
-        <input type="text" name="nama">
-        <input type="text" name="game">
-        <button type="submit"> Cek </button>
-    </form>
+    <head>
+        <script>
+            function fungsi(form) {
+                if ((form.nama.value == "ivan" || form.nama.value == "ivan ubaidillah") && form.game.value == "mobile legend") {
+                    alert("Kamu noob bermain " +form.game.value)
+                }
+                else if (form.nama.value == "ivan" || form.nama.value == "ivan ubaidillah") {
+                    alert("Kamu tidak terlalu hebat bermain " +form.game.value)
+                }
+                else if ((form.nama.value == "azis" || form.nama.value == "ivan ubaidillah") && form.game.value == "mobile legend") {
+                    alert("Kamu bermain " +form.game.value+ "?")
+                }
+                else if (form.nama.value == "azis" || form.nama.value == "ivan ubaidillah") {
+                    alert("Kamu tidak hebat bermain " +form.game.value)
+                }
+                else (
+                    alert("Kamu lumayan kok bermain " +form.game.value)
+                )
+                
+            }
+        </script>
+    </head>
+    <body>
+        <form name="formkita">
+            <input type="text" name="nama" value=""> <br> <br>
+            <input type="text" name="game" value=""> <br> <br>
+            <input type="button" onClick="fungsi(this.form)" value="Cek">
+        </form>
+    </body>
 </html>
